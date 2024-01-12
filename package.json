@@ -2,10 +2,16 @@
   "name": "typescript-homework-module-3",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "start": "web-dev-server --node-resolve --open --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@web/dev-server": "^0.4.1",
+    "npm-run-all": "^4.1.5",
     "typescript": "^5.1.5"
   }
 }
