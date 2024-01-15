@@ -16,8 +16,9 @@ class Person {
 
 abstract class House {
   private tenants: Person[] = [];
+  public door: boolean = false;
 
-  constructor(public door: boolean = false, public key: Key) {}
+  constructor(public key: Key) {}
 
   abstract openDoor(person: Person): void;
 
@@ -46,7 +47,7 @@ class MyHouse extends House {
 
 const key = new Key();
 const person = new Person('John', key);
-const house = new MyHouse(false, key);
+const house = new MyHouse(key);
 
 house.openDoor(person);
 house.comeIn(person);
